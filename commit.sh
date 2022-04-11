@@ -1,9 +1,6 @@
-developer='Diego Rincon'
-mail='drinconyanez@unisa.it'
+developer='d1egoprog'
 dateString=$(date '+%y/%m/%d')
 timeString=$(date '+%H:%m:%S')
-git config user.email "${mail}"
-git config user.name "${developer}"
 echo "-------------------------------------------"
 echo "Starting push to repository"
 git add *
