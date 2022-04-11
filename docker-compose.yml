@@ -1,0 +1,44 @@
+version: '3.7'
+
+volumes:
+  neo4j_data:
+
+networks:
+  backend_network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.18.0.0/24
+  
+services:
+  stanford_corenlp:
+    restart: always
+    image: stanford_corenlp:4.1.0
+    build: stanford-corenlp-4.1.0/.
+    ports:
+      - "9000:9000"
+    networks: 
+      backend_network:
+        ipv4_address: 172.18.0.102
+
+  neo4j_server:
+    image: neo4j:4.2.4
+    restart: unless-stopped
+    networks: 
+      backend_network:
+        ipv4_address: 172.18.0.103
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - neo4j_data:/conf
+      - neo4j_data:/data
+      - ./import:/import
+      - neo4j_data:/logs
+      - neo4j_data:/plugins
+    environment: 
+      - NEO4J_dbms_memory_pagecache_size=1G
+      - NEO4J_dbms.memory.heap.initial_size=1G
+      - NEO4J_dbms_memory_heap_max__size=1G
+      - NEO4J_AUTH=neo4j/test
+      - NEO4JLABS_PLUGINS=["n10s"]
