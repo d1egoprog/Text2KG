@@ -2,7 +2,9 @@
 
 Text to Knowledge Graph (Text2KG) is a python library builded with the intention of create Knowledge Graph composed on a set of RDF Triples from prosaic text sources.
 
-![High level Pipeline](img/diagram.png)
+<center>![High level Pipeline](img/diagram.png)</center>
+
+The High level view of the proposed pipeline, with each stage in the Knowledge Base Construction process.
 
 ## System Preparation
 
