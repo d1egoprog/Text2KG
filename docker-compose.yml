@@ -13,8 +13,7 @@ networks:
 services:
   stanford_corenlp:
     restart: always
-    image: stanford_corenlp:4.1.0
-    build: stanford-corenlp-4.1.0/.
+    image: d1egoprog/stanford-corenlp:4.1.0
     ports:
       - "9000:9000"
     networks: 
@@ -33,7 +32,7 @@ services:
     volumes:
       - neo4j_data:/conf
       - neo4j_data:/data
-      - ./import:/import
+      #- ./import:/import
       - neo4j_data:/logs
       - neo4j_data:/plugins
     environment: 
