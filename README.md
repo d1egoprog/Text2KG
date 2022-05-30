@@ -1,8 +1,8 @@
-# Text2KG - A Dockerized Service
+# Text2KG - Knowledge Graph construction from text, an approach applied to fictional novels
 
 Text to Knowledge Graph (Text2KG) is a dockerized set of services built to generate Knowledge Graphs; the created statements are shown in the form of RDF Triples, extracted from prosaic text sources. The services can be consumed via REST API. 
 
-This work was presented at the European Semantic Web Conference (ESWC2022) in the frame of the Knowledge Graph Generation from Text (TEXT2KG) workshop. 
+This work was presented at the European Semantic Web Conference (ESWC2022) in the frame of the Knowledge Graph Generation from Text (TEXT2KG) workshop and is still a work in progress.
 
 The High level view of the proposed pipeline stage the Knowledge Base Construction process.
 
@@ -14,7 +14,7 @@ The High level view of the proposed pipeline stage the Knowledge Base Constructi
 
 To run the entire system, perform the following steps:
 
-1. Download and excecute the docker compose file
+1. Download the repository and excecute the docker compose file
 
 ```
 git clone https://github.com/d1egoprog/Text2KG.git
@@ -36,7 +36,7 @@ call n10s.graphconfig.set( { keepLangTag: true, handleRDFTypes: "LABELS_AND_NODE
 
 To explain the usage of this component, jupyter notebooks were prepared to showcase the functionability of each step in the proposed methodology. Initially is necesary to log into the prepared jupyterlab interface and open the `text2kg` folder, where the notebooks are located.
 
-The notebooks are located under the [examples](examples/)] folder in this repository. **NOTE:** The examples will be mounted in the `Text2KG` folder in the JupyterLab console.
+The notebooks are located under the [examples](examples/)] folder in this repository. **NOTE:** The examples will be mounted in the `Text2KG` folder in the JupyterLab environment.
 
 ### Open the JupyterLab Interface
 
@@ -68,9 +68,7 @@ Happy hacking!! 🖖🖖.
 
 ## Citations 
 
-If this work is with your interest you can read the presented paper [DOI](http://doi.org)
-
-Also, if you use this system in your research please dont forget to cite 👍 this work, the sugested BibTex is recomended to use.
+If this work is with your interest you can read the presented paper [DOI](http://doi.org/) and if you use it in your research please don't forget to cite 👍 this work, the sugested BibTex is recomended to use.
 
 ``` BibTex
 
@@ -79,3 +77,7 @@ Also, if you use this system in your research please dont forget to cite 👍 th
 ## Contact
 
 If you have any questions in deployment or any error is found, please contact me by opening an issue. And contributing is always welcome. The [Github repository URL](https://github.com/d1egoprog/Text2KG).
+
+### Licensing
+
+This system is released for demo purposes and is released under a free to use policy. At the moment the *system* is open to use in all environments, but the source of the *API component* is **not released** yet . However results produced from the execution of the pipeline must be released in CC-BY-SA licence.

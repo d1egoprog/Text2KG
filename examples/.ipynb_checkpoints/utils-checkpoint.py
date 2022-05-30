@@ -1,6 +1,5 @@
 import requests
 
-
 servers = {
     "triple_host": "http://172.18.0.101:5000/api/v1/",
     "stanford_host": "http://172.18.0.102:9000",
@@ -11,16 +10,18 @@ servers = {
 
 services = {
     'plain_all': servers['triple_host'] + 'plain',
-    'parser': servers['triple_host'] + 'plain/parser',
-    'chunking': servers['triple_host'] + 'plain/chunking',
-    'stanford': servers['triple_host'] + 'plain/stanford',
+    'rdf_dbpedia': servers['triple_host'] + 'rdf/DBPEDIA',
+    'csv': servers['triple_host'] + 'save/csv'
+    'n-triples': servers['triple_host'] + 'save/ntriples'
+    'turttle': servers['triple_host'] + 'save/turttle'
+    'json-ld': servers['triple_host'] + 'save/json'
     'neo4j': servers['triple_host'] + 'save/NEO4J'
 }
 
 headers = {
-    #'Accept':'application/json',
     'Content-type':'application/json' 
 }
+
 
 def executeRequest(operation, url, headers, data):
 	result = dict()
