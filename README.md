@@ -68,16 +68,26 @@ Happy hacking!! 🖖🖖.
 
 ## Citations 
 
-If this work is with your interest you can read the presented paper [DOI](http://doi.org/) and if you use it in your research please don't forget to cite 👍 this work, the sugested BibTex is recomended to use.
+If this work is with your interest you can read the presented [paper](http://ceur-ws.org/Vol-3184/TEXT2KG_Paper_7.pdf) and if you use it in your research please don't forget to cite 👍 this work, the suggested citation in BibTex format is:
 
 ``` BibTex
-
+@inproceedings{Rincon-Yanez2022,
+author = {Rincon-Yanez, Diego and Senatore, Sabrina},
+title = {{FAIR Knowledge Graph construction from text, an approach applied to fictional novels}},
+booktitle = {Proceedings of the 1st International Workshop on Knowledge Graph Generation From Text and the 1st International Workshop on Modular Knowledge co-located with 19th Extended Semantic Conference (ESWC 2022)},
+issn = {1613-0073}
+pages = {94--108},
+address = {Hersonissos, Greece},
+publisher = {CEUR-WS},
+url = {http://ceur-ws.org/Vol-3184/TEXT2KG_Paper_7.pdf},
+year = {2022}
+}
 ```
 
 ## Contact
 
-If you have any questions in deployment or any error is found, please contact me by opening an issue. And contributing is always welcome. The [Github repository URL](https://github.com/d1egoprog/Text2KG).
+If you have any questions in deployment or any error is found, please contact me by opening an issue. And contributing is always welcome. The [Github repository Issues URL](https://github.com/d1egoprog/Text2KG/issues).
 
 ### Licensing
 
-This system is released for demo purposes and is released under a free to use policy. At the moment the *system* is open to use in all environments, but the source of the *API component* is **not released** yet . However results produced from the execution of the pipeline must be released in CC-BY-SA licence.
+This system is intended for demo purposes and is released under a free to use policy. At the moment the *system* is open to use in all environments, but the source of the *API component* is **not released** yet . However results produced from the execution of the pipeline must be released in CC-BY-SA licence.
