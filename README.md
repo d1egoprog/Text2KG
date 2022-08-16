@@ -72,15 +72,15 @@ If this work is with your interest you can read the presented [paper](http://ceu
 
 ``` BibTex
 @inproceedings{Rincon-Yanez2022,
-author = {Rincon-Yanez, Diego and Senatore, Sabrina},
-title = {{FAIR Knowledge Graph construction from text, an approach applied to fictional novels}},
-booktitle = {Proceedings of the 1st International Workshop on Knowledge Graph Generation From Text and the 1st International Workshop on Modular Knowledge co-located with 19th Extended Semantic Conference (ESWC 2022)},
-issn = {1613-0073}
-pages = {94--108},
-address = {Hersonissos, Greece},
-publisher = {CEUR-WS},
-url = {http://ceur-ws.org/Vol-3184/TEXT2KG_Paper_7.pdf},
-year = {2022}
+  author = {Rincon-Yanez, Diego and Senatore, Sabrina},
+  title = {{FAIR Knowledge Graph construction from text, an approach applied to fictional novels}},
+  booktitle = {Proceedings of the 1st International Workshop on Knowledge Graph Generation From Text and the 1st International Workshop on Modular Knowledge co-located with 19th Extended Semantic Conference (ESWC 2022)},
+  issn = {1613-0073}
+  pages = {94--108},
+  address = {Hersonissos, Greece},
+  publisher = {CEUR-WS},
+  url = {http://ceur-ws.org/Vol-3184/TEXT2KG_Paper_7.pdf},
+  year = {2022}
 }
 ```
 
